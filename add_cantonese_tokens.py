@@ -8,7 +8,7 @@ rng = Random(42)
 sentences = load_lihkg()
 sentences = rng.choices(sentences, k=524288)
 
-tokenizer_old = BertTokenizerFast.from_pretrained('fnlp/bart-base-chinese')
+tokenizer_old = BertTokenizerFast.from_pretrained('ckiplab/gpt2-tiny-chinese')
 # tokenizer_new = tokenizer_old.train_new_from_iterator(sentences, 2048, length=len(sentences))
 
 ########
