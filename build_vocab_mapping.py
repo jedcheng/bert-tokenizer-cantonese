@@ -1,7 +1,7 @@
 from collections import defaultdict
 from transformers import BertTokenizer
 
-tokenizer = BertTokenizer.from_pretrained('fnlp/bart-base-chinese')
+tokenizer = BertTokenizer.from_pretrained('ckiplab/gpt2-tiny-chinese')
 tokenizer.save_vocabulary('vocab-bart-base-chinese.txt')
 
 from lib import token_id_to_token, token_to_token_id, conv_table, is_alpha_char, is_cjkv
