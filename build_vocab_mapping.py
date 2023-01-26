@@ -38,7 +38,7 @@ for token_id, token in token_id_to_token.items():
 
 ###########
 
-def filter_candidate_token_ids(token_new: str, candidate_token_ids: set[int]) -> set[int]:
+def filter_candidate_token_ids(token_new: str, candidate_token_ids):
     # non-CJKV tokens
 
     if not is_cjkv(token_new):
