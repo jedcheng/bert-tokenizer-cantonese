@@ -1,6 +1,7 @@
 from os.path import expanduser
+from typing import List
 
-def load_lihkg() -> list[str]:
+def load_lihkg() -> List[str]:
     filename = expanduser('lihkg-1-2850000-processed-dedup.csv')
     sentences = []
     with open(filename, encoding='utf-8') as f:
