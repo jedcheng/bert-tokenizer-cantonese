@@ -6,7 +6,7 @@ from transformers import BertTokenizer, FlaxBartModel
 from lib import random_init_embed, save_params, seed2key
 
 tokenizer = BertTokenizer.from_pretrained('ckiplab/gpt2-tiny-chinese')
-model = FlaxBartModel.from_pretrained('ckiplab/gpt2-tiny-chinese', from_pt=True)
+model = FlaxBartModel.from_pretrained('ckiplab/gpt2-tiny-chinesee', from_pt=True)
 
 key = seed2key(42)
 
