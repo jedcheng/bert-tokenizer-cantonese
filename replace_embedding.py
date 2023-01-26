@@ -3,12 +3,12 @@ def replace_embedding():
     import jax; jax.config.update('jax_platforms', 'cpu')
 
     import jax.numpy as np
-    from transformers import BertTokenizer, FlaxBartModel
+    from transformers import BertTokenizer, FlaxGPT2Model
 
     from lib import random_init_embed, save_params, seed2key
 
     tokenizer = BertTokenizer.from_pretrained('ckiplab/gpt2-tiny-chinese')
-    model = FlaxBartModel.from_pretrained('ckiplab/gpt2-tiny-chinese', from_pt=True)
+    model = FlaxGPT2Model.from_pretrained('ckiplab/gpt2-tiny-chinese', from_pt=True)
 
     key = seed2key(42)
 
